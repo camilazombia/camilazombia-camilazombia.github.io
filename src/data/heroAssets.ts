@@ -1,11 +1,11 @@
 export const heroAssets = {
-  portrait: '/images/hero/hero.png',
-  hero: '/images/hero/hero.png',
-  fan: '/images/hero/fan-pink.png',
+  portrait: `${import.meta.env.BASE_URL}images/hero/hero.png`,
+  hero: `${import.meta.env.BASE_URL}images/hero/hero.png`,
+  fan: `${import.meta.env.BASE_URL}images/hero/fan-pink.png`,
   sparkles: [
-    '/images/hero/sparkle-1.png',
-    '/images/hero/sparkle-2.png',
-    '/images/hero/sparkle-3.png',
-    '/images/hero/sparkle-4.png',
+    `${import.meta.env.BASE_URL}images/hero/sparkle-1.png`,
+    `${import.meta.env.BASE_URL}images/hero/sparkle-2.png`,
+    `${import.meta.env.BASE_URL}images/hero/sparkle-3.png`,
+    `${import.meta.env.BASE_URL}images/hero/sparkle-4.png`,
   ],
 };

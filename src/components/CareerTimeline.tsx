@@ -9,13 +9,13 @@ import { useLanguage } from '../i18n/LanguageContext';
 import styles from './CareerTimeline.module.css';
 
 const chapters = [
-  { year: '2017', label: { es: 'Los primeros trazos', en: 'The first strokes' }, companies: ['Peoplepass'], motif: 'Aa', image: '/images/gallery/peoplepass-cover.svg', project: 'peoplepass-graphic-design' },
-  { year: '2019', label: { es: 'Construir identidades', en: 'Shaping identities' }, companies: ['Buentipo Anchor'], motif: '✳', image: '/images/gallery/previsora-cover.svg', project: 'previsora-social-media' },
-  { year: '2022', label: { es: 'Del gráfico a lo digital', en: 'From graphic to digital' }, companies: ['BlackSip'], motif: '</>', image: '/images/gallery/the-bar-cover.svg', project: 'the-bar-colombia' },
-  { year: '2023', label: { es: 'Explorar nuevos formatos', en: 'Exploring new formats' }, companies: ['Flexi'], motif: '✦', image: '/images/gallery/flexi-cover.svg', project: 'flexi-digital-campaigns' },
-  { year: '2024', label: { es: 'Diseñar y liderar', en: 'Designing & leading' }, companies: ['Pontificia Universidad Javeriana', 'Tres Astronautas', 'Inlaze'], motif: '↗', image: '/images/gallery/javeriana-landings.png', project: 'javeriana-landings' },
-  { year: '2025', label: { es: 'Conectar experiencias', en: 'Connecting experiences' }, companies: ['Niibu', 'RemoteLatinos', 'Ágata'], motif: '∞', image: '/images/gallery/remote-website.png', project: 'remote-latinos-website' },
-  { year: '2026', label: { es: 'Diseño al servicio de las personas', en: 'Design in service of people' }, companies: ['Secretaría de Hacienda de Bogotá'], motif: '✦', image: '/images/gallery/hacienda-appointments.png', project: 'appointment-scheduling' },
+  { year: '2017', label: { es: 'Los primeros trazos', en: 'The first strokes' }, companies: ['Peoplepass'], motif: 'Aa', image: `${import.meta.env.BASE_URL}images/gallery/peoplepass-cover.svg`, project: 'peoplepass-graphic-design' },
+  { year: '2019', label: { es: 'Construir identidades', en: 'Shaping identities' }, companies: ['Buentipo Anchor'], motif: '✳', image: `${import.meta.env.BASE_URL}images/gallery/previsora-cover.svg`, project: 'previsora-social-media' },
+  { year: '2022', label: { es: 'Del gráfico a lo digital', en: 'From graphic to digital' }, companies: ['BlackSip'], motif: '</>', image: `${import.meta.env.BASE_URL}images/gallery/the-bar-cover.svg`, project: 'the-bar-colombia' },
+  { year: '2023', label: { es: 'Explorar nuevos formatos', en: 'Exploring new formats' }, companies: ['Flexi'], motif: '✦', image: `${import.meta.env.BASE_URL}images/gallery/flexi-cover.svg`, project: 'flexi-digital-campaigns' },
+  { year: '2024', label: { es: 'Diseñar y liderar', en: 'Designing & leading' }, companies: ['Pontificia Universidad Javeriana', 'Tres Astronautas', 'Inlaze'], motif: '↗', image: `${import.meta.env.BASE_URL}images/gallery/javeriana-landings.png`, project: 'javeriana-landings' },
+  { year: '2025', label: { es: 'Conectar experiencias', en: 'Connecting experiences' }, companies: ['Niibu', 'RemoteLatinos', 'Ágata'], motif: '∞', image: `${import.meta.env.BASE_URL}images/gallery/remote-website.png`, project: 'remote-latinos-website' },
+  { year: '2026', label: { es: 'Diseño al servicio de las personas', en: 'Design in service of people' }, companies: ['Secretaría de Hacienda de Bogotá'], motif: '✦', image: `${import.meta.env.BASE_URL}images/gallery/hacienda-appointments.png`, project: 'appointment-scheduling' },
 ].sort((a, b) => Number(b.year) - Number(a.year));
 
 type Chapter = (typeof chapters)[number];

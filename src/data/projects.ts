@@ -111,39 +111,39 @@ const selection = [
 const projectDetails: Record<string, Partial<Project>> = {
   'peoplepass-graphic-design': {
     role: 'Graphic Designer Analyst',
-    image: '/images/gallery/peoplepass-cover.svg',
+    image: `${import.meta.env.BASE_URL}images/gallery/peoplepass-cover.svg`,
     context: 'Diseño gráfico para la comunicación de PeoplePass en medios digitales y puntos de contacto físicos. Este proyecto reúne contenido para redes sociales y material POP, manteniendo la coherencia con la identidad de marca.',
     roleDetail: 'Creación de piezas gráficas, coordinación con proveedores y gestión de aprobaciones para mantener los estándares de la marca.'
   },
   'previsora-social-media': {
     role: 'Graphic Designer',
-    image: '/images/gallery/previsora-cover.svg',
+    image: `${import.meta.env.BASE_URL}images/gallery/previsora-cover.svg`,
     context: 'Proyecto de comunicación visual para redes sociales de Previsora Seguros, desarrollado en Buentipo Anchor. La selección se enfoca en piezas gráficas de campaña y su adaptación a formatos digitales.',
     roleDetail: 'Diseño de piezas para redes sociales y adaptación visual de campañas, manteniendo la coherencia de la identidad de Previsora Seguros.'
   },
   'the-bar-colombia': {
     role: 'Web Designer Analyst',
-    image: '/images/gallery/the-bar-cover.svg',
+    image: `${import.meta.env.BASE_URL}images/gallery/the-bar-cover.svg`,
     context: 'The Bar Colombia fue uno de los clientes de eCommerce atendidos durante mi experiencia en BlackSip. El proyecto se centra en el diseño para la tienda online y la experiencia de compra.',
     roleDetail: 'Diseño para eCommerce dentro del trabajo con clientes de BlackSip, con foco en la experiencia de compra y los objetivos comerciales.'
   },
   'flexi-digital-campaigns': {
     role: 'Graphic Designer · Freelance',
-    image: '/images/gallery/flexi-campaign.jpg',
+    image: `${import.meta.env.BASE_URL}images/gallery/flexi-campaign.jpg`,
     context: 'Campañas digitales para promocionar productos de Flexi e impulsar su venta. El proyecto reúne piezas estáticas y animadas para redes sociales y publicidad digital.',
     roleDetail: 'Conceptualización visual y diseño de piezas promocionales para campañas como Cyber Days, Black Days y Sale Days, con adaptación a distintos formatos.'
   }
 };
 
 const galleryImages: Record<string, string> = {
-  'appointment-scheduling': '/images/gallery/hacienda-appointments.png',
-  'pqrs-ai': '/images/gallery/pqrs-ai.png',
-  'video-interview': '/images/gallery/remote-video-interview.png',
-  'remote-latinos-website': '/images/gallery/remote-website.png',
-  'nibu-english-platform': '/images/gallery/niwu-english-platform.png',
-  'publiandes-kids-platform': '/images/gallery/publiandes-kids-platform.png',
-  'javeriana-landings': '/images/gallery/javeriana-landings.png',
-  'devar-colombia-website': '/images/gallery/remote-website.png',
+  'appointment-scheduling': `${import.meta.env.BASE_URL}images/gallery/hacienda-appointments.png`,
+  'pqrs-ai': `${import.meta.env.BASE_URL}images/gallery/pqrs-ai.png`,
+  'video-interview': `${import.meta.env.BASE_URL}images/gallery/remote-video-interview.png`,
+  'remote-latinos-website': `${import.meta.env.BASE_URL}images/gallery/remote-website.png`,
+  'nibu-english-platform': `${import.meta.env.BASE_URL}images/gallery/niwu-english-platform.png`,
+  'publiandes-kids-platform': `${import.meta.env.BASE_URL}images/gallery/publiandes-kids-platform.png`,
+  'javeriana-landings': `${import.meta.env.BASE_URL}images/gallery/javeriana-landings.png`,
+  'devar-colombia-website': `${import.meta.env.BASE_URL}images/gallery/remote-website.png`,
 };
 
 const projectPresentation: Record<string, { name: string; category: string }> = {
@@ -171,8 +171,8 @@ export const projects: Project[] = selection.map((project) => ({
   ...projectDetails[project.id],
   ...projectPresentation[project.id],
   playbackRate: project.id === 'previsora-social-media' ? 0.5 : 1,
-  animatedCover: project.id === 'previsora-social-media' ? '/videos/previsora-seguros.mp4' : project.id === 'javeriana-landings' ? '/videos/javeriana-inscripciones.mp4' : project.id === 'nibu-english-platform' ? '/videos/niibu.webm' : undefined,
-  thumbnail: project.id === 'flexi-digital-campaigns' ? '/images/gallery/flexi-campaign.jpg' : project.id === 'adidas' ? '/images/gallery/adidas.gif' : project.id === 'the-bar-colombia' ? '/images/gallery/the-bar-colombia.gif' : project.id === 'devar-colombia-website' ? '/images/gallery/remote-website.png' : undefined,
+  animatedCover: project.id === 'previsora-social-media' ? `${import.meta.env.BASE_URL}videos/previsora-seguros.mp4` : project.id === 'javeriana-landings' ? `${import.meta.env.BASE_URL}videos/javeriana-inscripciones.mp4` : project.id === 'nibu-english-platform' ? `${import.meta.env.BASE_URL}videos/niibu.webm` : undefined,
+  thumbnail: project.id === 'flexi-digital-campaigns' ? `${import.meta.env.BASE_URL}images/gallery/flexi-campaign.jpg` : project.id === 'adidas' ? `${import.meta.env.BASE_URL}images/gallery/adidas.gif` : project.id === 'the-bar-colombia' ? `${import.meta.env.BASE_URL}images/gallery/the-bar-colombia.gif` : project.id === 'devar-colombia-website' ? `${import.meta.env.BASE_URL}images/gallery/remote-website.png` : undefined,
   gallery: project.id === 'the-bar-colombia' || project.id === 'adidas' || project.id === 'nibu-english-platform' || project.id === 'javeriana-landings' || project.id === 'previsora-social-media' ? [] : [galleryImages[project.id] || projectDetails[project.id]?.image].filter((src): src is string => !!src),
 }));
 

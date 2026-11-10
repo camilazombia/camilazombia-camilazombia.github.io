@@ -68,7 +68,7 @@ export function Navbar() {
           <NavLink to="/projects" onClick={() => setOpen(false)}><span className={styles.linkNumber}>02</span><span>{copy.projects}</span><ArrowUpRight aria-hidden="true" /></NavLink>
           <NavLink to="/about" onClick={() => setOpen(false)}><span className={styles.linkNumber}>03</span><span>{es ? 'Sobre mí' : 'About me'}</span><ArrowUpRight aria-hidden="true" /></NavLink>
         </nav>
-        <div className={styles.menuPortrait}><span className={styles.portraitHalo} /><img src="/images/menu-cupid.png" alt="Cupido con alas, arco y flecha" /><p>UX/UI &amp; Product Designer</p></div>
+        <div className={styles.menuPortrait}><span className={styles.portraitHalo} /><img src={`${import.meta.env.BASE_URL}images/menu-cupid.png`} alt="Cupido con alas, arco y flecha" /><p>UX/UI &amp; Product Designer</p></div>
       </div>
       <div className={styles.panelFooter}>
         <nav className={styles.socialLinks} aria-label={es ? 'Contacto y redes sociales' : 'Contact and social links'}>

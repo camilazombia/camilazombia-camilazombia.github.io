@@ -34,7 +34,7 @@ export function ProjectDetailPage() {
         <div className={styles.missing}>
           <Link to="/" className={styles.brand}>Camila <em>Gómez</em></Link>
           <h1>{copy.projectNotFound}</h1>
-          <a href="/projects" className={styles.backLink}>
+          <a href={`${import.meta.env.BASE_URL}projects`} className={styles.backLink}>
             <ArrowLeft size={16} aria-hidden="true" /> {copy.backToPortfolio}
           </a>
         </div>

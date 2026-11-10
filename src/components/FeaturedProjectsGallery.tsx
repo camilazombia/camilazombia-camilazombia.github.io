@@ -21,7 +21,7 @@ export function FeaturedProjectsGallery() {
       <div className={styles.pinkPanel} aria-hidden="true" />
       <motion.div className={styles.reveal} style={{ opacity: reduced ? 1 : reveal, y: reduced ? 0 : entrance }}>
 
-      <motion.img style={{ y: reduced ? 0 : floatY }} className={styles.bow} src="/images/hero/bow-pearl.png" alt="" />
+      <motion.img style={{ y: reduced ? 0 : floatY }} className={styles.bow} src={`${import.meta.env.BASE_URL}images/hero/bow-pearl.png`} alt="" />
       <header className={styles.heading}>
         <p>{copy.projectsPrefix}</p>
         <h2 id="projects-heading">{copy.projects}</h2>
@@ -30,9 +30,9 @@ export function FeaturedProjectsGallery() {
         {projects.slice(0, 3).map((project, index) => (
           <motion.article initial={reduced ? false : { opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ duration: .8, delay: index * .12 }} className={`${styles.card} ${styles[frames[index]]}`} key={project.id}>
             <Link to={`/projects/${project.id}`} className={styles.projectLink} aria-label={`${copy.viewProject}: ${project.name}`}>
-              <img className={styles.frame} src={`/images/projects/${frames[index]}-frame.png`} alt="" loading="lazy" />
+              <img className={styles.frame} src={`${import.meta.env.BASE_URL}images/projects/${frames[index]}-frame.png`} alt="" loading="lazy" />
               <div className={styles.plaque}>
-                <img src="/images/projects/project-plaque.png" alt="" loading="lazy" />
+                <img src={`${import.meta.env.BASE_URL}images/projects/project-plaque.png`} alt="" loading="lazy" />
                 <span className={styles.projectName}>{project.name}</span>
               </div>
             </Link>
@@ -40,7 +40,7 @@ export function FeaturedProjectsGallery() {
         ))}
       </div>
       <Link className={styles.allProjects} to="/projects">{language === 'es' ? 'Ver todos los proyectos' : 'View all projects'}<ArrowUpRight size={17} aria-hidden="true" /></Link>
-      <motion.img className={styles.rose} src="/images/hero/flower-right.png" alt="" style={{ y: reduced ? 0 : floatY }} />
+      <motion.img className={styles.rose} src={`${import.meta.env.BASE_URL}images/hero/flower-right.png`} alt="" style={{ y: reduced ? 0 : floatY }} />
       </motion.div>
     </section>
   );

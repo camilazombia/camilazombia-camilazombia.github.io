@@ -14,7 +14,7 @@ export function answerAbout(question: string, language: Language): AboutAnswer {
   const es = language === 'es';
   const q = normalizeQuestion(question);
   const projectLink = { label: es ? 'Explorar proyectos' : 'Explore projects', href: '/projects' };
-  const cvLink = { label: es ? 'Descargar CV' : 'Download CV', href: `/cv/Laura-Camila-Gomez-CV-${language}.pdf` };
+  const cvLink = { label: es ? 'Descargar CV' : 'Download CV', href: `${import.meta.env.BASE_URL}cv/Laura-Camila-Gomez-CV-${language}.pdf` };
   if (/whatsapp|contact|correo|email|hablar|mensaje|talk|contrat|hire|disponib|available|precio|price|tarifa|rate/.test(q)) return {
     text: es ? 'Puedes escribirme por WhatsApp para contarme sobre tu idea, consultar disponibilidad y conversar sobre el alcance del proyecto. Estoy en Bogotá, Colombia.' : 'You can reach me on WhatsApp to share your idea, ask about availability and discuss the scope of your project. I’m based in Bogotá, Colombia.',
     links: [{ label: es ? 'Hablemos por WhatsApp' : 'Let’s talk on WhatsApp', href: whatsappUrl(language) }],

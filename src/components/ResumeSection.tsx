@@ -10,7 +10,7 @@ export function ResumeSection() {
     <section className={styles.resume} id="experience" aria-labelledby="resume-heading">
       <header className={styles.header}>
         <div><p className={styles.eyebrow}>{es ? 'Mi trayectoria' : 'My background'}</p><h2 id="resume-heading">{es ? 'Experiencia y formación' : 'Experience & education'}</h2></div>
-        <a className={styles.download} href={`/cv/Laura-Camila-Gomez-CV-${language}.pdf`} download><Download size={17} aria-hidden="true" />{es ? 'Descargar CV' : 'Download CV'} <span>PDF</span></a>
+        <a className={styles.download} href={`${import.meta.env.BASE_URL}cv/Laura-Camila-Gomez-CV-${language}.pdf`} download><Download size={17} aria-hidden="true" />{es ? 'Descargar CV' : 'Download CV'} <span>PDF</span></a>
       </header>
       <CareerTimeline />
       <div className={styles.columns}>

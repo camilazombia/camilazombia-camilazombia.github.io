@@ -25,7 +25,7 @@ function PageLayout() {
 
 export default function App() {
   return <LanguageProvider>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ProjectTransition>
         <ScrollToPage />
         <Routes>
