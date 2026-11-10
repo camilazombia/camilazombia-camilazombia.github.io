@@ -1,0 +1,51 @@
+﻿.career { position: relative; margin-inline: calc(-1 * max(24px, (100vw - 1040px) / 2)); background: #3d111d; }
+.stage { padding: 24px clamp(24px, 5vw, 80px) 0; }
+.yearNav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 16px 0 24px; border-bottom: 1px solid #edbac62e; }
+.navLabel { display: inline-flex; align-items: center; gap: 14px; color: #deb0bc; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+.yearLinks { display: flex; flex-wrap: wrap; gap: clamp(12px, 3vw, 40px); }
+.yearLinks button { padding: 10px 2px; border: 0; border-bottom: 1px solid transparent; background: none; color: #c6a6af; font: 400 .85rem/1 var(--body-font); cursor: pointer; }
+.yearLinks button[aria-current='step'] { color: #f1cf9d; border-color: #f1cf9d; }
+.viewport { overflow: clip; }
+.track { list-style: none; margin: 0; padding: 32px 0; }
+.chapter { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 48px; padding: 48px 0; scroll-margin-top: 24px; }
+.visual { position: relative; min-width: 0; padding: 32px 12px 12px; }
+.largeYear { position: absolute; top: -16px; left: 0; color: #b67b8860; font: italic 400 clamp(5rem, 9vw, 9rem)/1 var(--heading-font); letter-spacing: -.06em; }
+.imageLink { position: relative; display: block; padding: 10px; background: #f2d8b2; color: #3d111d; box-shadow: 12px 18px 36px #20060c40; }
+.imageLink img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.imageLink > span { display: flex; justify-content: space-between; align-items: center; padding: 12px 2px 3px; font-size: .75rem; }
+.copy { min-width: 0; }
+.year { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 8px; color: #e8bf87; font: 400 3rem/1 var(--heading-font); }
+.year > span { color: #bd99a4; font: 400 .65rem/1 var(--body-font); letter-spacing: .12em; }
+.copy h3 { margin: 0 0 22px; color: #faeae5; font: italic 400 clamp(1.5rem, 2.4vw, 2rem)/1.15 var(--heading-font); }
+.job + .job { margin-top: 16px; padding-top: 16px; border-top: 1px solid #e4aebd26; }
+.job h4 { margin: 0 0 4px; color: #faeae5; font: 500 .95rem/1.35 var(--heading-font); }
+.role { margin: 0 0 4px; color: #edc3ce; font-size: .8rem; line-height: 1.45; }
+.date { margin: 0 0 6px; color: #bd99a4; font-size: .7rem; line-height: 1.5; }
+.summary, .clients { margin: 0; color: #dec3ca; font-size: .8rem; line-height: 1.6; }
+.clients { margin-top: 8px; color: #e8c798; }
+.caption { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; }
+.caption p { margin: 0; color: #e9c498; font: italic 400 1.3rem/1.4 var(--heading-font); }
+.caption > span { display: none; align-items: center; gap: 12px; color: #bd99a4; font-size: .7rem; }
+.progress { height: 1px; background: #e4aebd26; }
+.progress > div { height: 100%; background: #e8bf87; transform-origin: left; }
+.career a:focus-visible, .career button:focus-visible { outline: 2px solid #e8bf87; outline-offset: 5px; }
+.animated .stage { position: sticky; top: 0; height: 100svh; display: flex; flex-direction: column; }
+.animated .viewport { flex: 1; min-height: 0; display: flex; align-items: center; }
+.animated .track { display: flex; align-items: center; gap: 8vw; width: 100%; padding: 28px 6vw; }
+.animated .chapter { flex: 0 0 calc(100vw - 2 * clamp(24px, 5vw, 80px) - 12vw); min-width: 0; padding: 0; gap: 5vw; }
+.animated .copy { max-height: calc(100svh - 210px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #bd99a4 transparent; padding: 6px 12px 6px 0; }
+.animated .imageLink img { max-height: 44svh; }
+.animated .caption > span { display: inline-flex; }
+.animated .caption { flex-shrink: 0; }
+@media (max-width: 700px) {
+  .yearNav { display: block; }
+  .navLabel { margin-bottom: 16px; }
+  .yearLinks { justify-content: space-between; gap: 8px; }
+  .chapter { grid-template-columns: 1fr; gap: 28px; padding-block: 32px 48px; border-bottom: 1px solid #edbac62e; }
+  .visual { width: min(100%, 420px); margin: auto; }
+  .summary { font-size: .9rem; }
+  .caption { padding-block: 28px; }
+}
+
+.thumbnail { height: clamp(240px, 34svh, 380px); overflow: hidden; }
+

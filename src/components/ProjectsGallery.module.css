@@ -1,0 +1,83 @@
+﻿.gallery { --gallery-bg: var(--hero-bg); --gallery-ink: var(--home-text); --card-width: clamp(230px, 27vw, 430px); position: relative; z-index: 24; padding: 40px 0 26px; background: var(--gallery-bg); color: var(--gallery-ink); scroll-margin-top: 0; }
+.featured { margin-top: -32px; }
+.fullPage { min-height: calc(100svh - 100px); display: flex; flex-direction: column; justify-content: space-between; }
+.heading { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding-inline: 30px; }
+.heading h2 { margin: 0; font: 500 12px/1.4 var(--heading-font); letter-spacing: .04em; }
+.heading sup { margin-left: 8px; font-size: 9px; }
+.heading > span { font-size: 10px; }
+.rail { display: flex; overflow-x: auto; scrollbar-width: none; padding: clamp(75px, 11vh, 145px) 0 0; touch-action: pan-x pan-y; cursor: grab; overscroll-behavior-x: contain; }
+.rail:active { cursor: grabbing; }
+.rail::-webkit-scrollbar { display: none; }
+.group { flex: 0 0 auto; display: flex; gap: 12px; padding-right: 12px; }
+.card { flex: 0 0 var(--card-width); width: var(--card-width); min-width: 0; }
+.projectLink { display: block; user-select: none; -webkit-user-drag: none; }
+.label { display: flex; flex-direction: column; justify-content: flex-end; gap: 2px; min-height: 36px; padding: 0 2px 7px; }
+.label h3 { margin: 0; font: 500 10px/1.2 var(--heading-font); }
+.label > span { font: 400 8px/1.2 var(--body-font); opacity: .7; }
+.imageStage { position: relative; height: clamp(340px, 54svh, 650px); overflow: hidden; background: var(--home-pink-soft); }
+.imageStage > img { width: 100%; height: 100%; object-fit: cover; object-position: center; pointer-events: none; transition: transform .65s cubic-bezier(.22,1,.36,1); }
+.imageStage > div { pointer-events: none; }
+.projectLink:hover .imageStage > img { transform: scale(1.035); }
+.open { position: absolute; right: 14px; bottom: 14px; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--gallery-ink); color: var(--gallery-bg); opacity: 0; transform: translateY(6px); transition: opacity .2s, transform .2s; }
+.projectLink:hover .open, .projectLink:focus-visible .open { opacity: 1; transform: none; }
+.bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 30px 0; font-size: 10px; }
+.bottom p { margin: 0; }
+.bottom > a { display: inline-flex; align-items: center; gap: 8px; }
+.controls { display: flex; gap: 6px; }
+.controls button { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--home-border); border-radius: 50%; color: inherit; background: transparent; cursor: pointer; }
+.controls button:hover { color: var(--gallery-bg); background: var(--gallery-ink); }
+.gallery a:focus-visible, .gallery button:focus-visible, .rail:focus-visible { outline: 2px solid var(--gallery-ink); outline-offset: -2px; }
+@media (max-width: 650px) {
+ .gallery { --card-width: 68vw; padding-top: 30px; }
+ .featured { margin-top: -20px; }
+ .heading { padding-inline: 20px; }
+ .heading > span { max-width: 120px; text-align: right; font-size: 9px; }
+ .rail { padding-top: 70px; }
+ .group { gap: 9px; padding-right: 9px; }
+ .imageStage { height: clamp(350px, 54svh, 500px); }
+ .bottom { padding-inline: 20px; flex-wrap: wrap; }
+ .bottom > span { display: none; }
+ .label h3 { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) { .imageStage > img, .open { transition: none; } .projectLink:hover .imageStage > img { transform: none; } }
+
+
+
+.heading h2 { color: var(--home-pink); font-size: clamp(2rem, 3.5vw, 3.5rem); font-weight: 400; line-height: 1.1; letter-spacing: -.025em; }
+.label h3 { color: var(--home-text); }
+.open { background: var(--home-pink); color: #fff; }
+.controls button { transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.controls button:hover { background: var(--home-pink); border-color: var(--home-pink); color: #fff; }
+.bottom > a:hover { color: #c63f73; }
+
+.fullPage { flex: 1; min-height: 0; padding: clamp(12px, 3dvh, 30px) 0 12px; overflow: hidden; }
+.fullPage .rail { flex: 1; min-height: 0; padding-top: 0; align-items: stretch; }
+.fullPage .group { height: 100%; align-items: stretch; }
+.fullPage .card { height: 100%; }
+.fullPage .projectLink { display: flex; flex-direction: column; height: 100%; }
+.fullPage .label { flex-shrink: 0; min-height: 40px; }
+.fullPage .imageStage { flex: 1; min-height: 0; height: auto; }
+.fullPage .bottom { flex-shrink: 0; padding-top: 14px; }
+@media(max-height:500px) { .fullPage { padding-top: 6px; padding-bottom: 4px; } .fullPage .label { min-height: 30px; } .fullPage .bottom { padding-top: 6px; } }
+
+.fullPage .group { height: min(100%, 52dvh); align-self: center; }
+@media(max-width:650px) { .fullPage .group { height: min(100%, 48dvh); } }
+
+
+.fullPage .label { gap: 7px; min-height: 76px; padding: 0 4px 16px; }
+.fullPage .label h3 { font: 600 clamp(17px, 1.45vw, 23px)/1.25 var(--body-font); letter-spacing: -.025em; color: var(--home-text); }
+.fullPage .label > span { font: 400 12px/1.4 var(--body-font); color: var(--home-muted); opacity: 1; }
+@media(max-width:650px) { .fullPage .label { min-height: 80px; padding-bottom: 14px; } .fullPage .label h3 { font-size: 18px; } .fullPage .label > span { font-size: 12px; } }
+@media(max-height:500px) { .fullPage .label { min-height: 58px; gap: 4px; padding-bottom: 8px; } .fullPage .label h3 { font-size: 16px; } .fullPage .label > span { font-size: 11px; } }
+
+.fullPage .label h3 { font-size: clamp(16px, 1.2vw, 19px); font-weight: 500; letter-spacing: -.015em; }
+.fullPage .label > span { font-size: 11px; line-height: 1.5; }
+@media(max-width:650px) { .fullPage .label h3 { font-size: 16px; } }
+@media(max-height:500px) { .fullPage .label h3 { font-size: 15px; } }
+
+.related { width: 100vw; margin-left: calc(50% - 50vw); padding-top: 40px; border-top: 1px solid var(--home-border); }
+.related .rail { padding-top: 32px; }
+.related .label { min-height: 64px; gap: 6px; padding: 0 4px 14px; }
+.related .label h3 { font: 500 16px/1.25 var(--body-font); }
+.related .label > span { font-size: 11px; }
+.related .imageStage { height: clamp(300px, 46svh, 500px); }

@@ -1,0 +1,154 @@
+[
+  {
+    "company": "Secretaría de Hacienda de Bogotá",
+    "role": "UX/UI Designer",
+    "date": {
+      "es": "Enero 2026 - Octubre 2026 · Contrato · Bogotá, remoto",
+      "en": "January 2026 - October 2026 · Contract · Bogotá, remote"
+    },
+    "summary": {
+      "es": "Servicios digitales para contribuyentes y equipos internos: agendamiento, pagos, trámites tributarios y gestión administrativa. Componentes y documentación del sistema de diseño institucional.",
+      "en": "Digital services for taxpayers and internal teams: appointments, payments, tax procedures, and administrative tools. Institutional design system components and documentation."
+    },
+    "startDate": "2026-01"
+  },
+  {
+    "company": "Niibu",
+    "role": "Product Designer",
+    "date": {
+      "es": "Diciembre 2025 - Agosto 2026 · Tiempo completo · Remoto",
+      "en": "December 2025 - August 2026 · Full-time · Remote"
+    },
+    "summary": {
+      "es": "Creación desde cero de un sistema de diseño para Customer App, Service Provider App y Content Creator App. Definición de tokens de color, tipografía, espaciado y tamaños para mantener la consistencia. Configuración de componentes adaptables a móvil y tablet e integración de tokens para modos claro y oscuro en las tres aplicaciones.",
+      "en": "Built a comprehensive design system from scratch for the Customer App, Service Provider App, and Content Creator App. Defined color, typography, spacing, and sizing tokens for consistency. Configured responsive components for mobile and tablet and integrated light and dark mode tokens for scalable theming across all three applications."
+    },
+    "startDate": "2025-12"
+  },
+  {
+    "company": "RemoteLatinos",
+    "role": "UX/UI Developer",
+    "date": {
+      "es": "Noviembre 2025 - Actualidad · Medio tiempo",
+      "en": "November 2025 - Present · Part-time"
+    },
+    "summary": {
+      "es": "Diseño y mejora de funcionalidades mediante sprints y procesos iterativos. Definición de flujos de usuario con recorridos principales, alternativos y casos límite. Diseño de interfaces y documentación de comportamientos para apoyar la implementación del equipo de desarrollo.",
+      "en": "Design and improve platform features through sprints and iterative design processes. Define user flows covering primary journeys, alternative paths, and edge cases. Design interfaces and document interaction behavior to support implementation by the development team."
+    },
+    "startDate": "2025-11"
+  },
+  {
+    "company": "Ágata",
+    "role": "UX/UI Designer",
+    "startDate": "2025-09",
+    "date": {
+      "es": "Septiembre 2025 - Diciembre 2025 · Contrato · Bogotá, remoto",
+      "en": "September 2025 - December 2025 · Contract · Bogotá, remote"
+    },
+    "summary": {
+      "es": "Rediseño de la Oficina Virtual Azul de la Secretaría de Hacienda de Bogotá a través de Ágata. Mejora de flujos e interfaces para simplificar la navegación y el acceso a servicios tributarios. Reestructuración de componentes y procesos para dar consistencia a la plataforma. Colaboración con desarrollo para entender las restricciones técnicas y definir soluciones viables.",
+      "en": "Worked through Ágata on the redesign of the Oficina Virtual Azul for Secretaría de Hacienda de Bogotá. Redesigned user flows and interfaces to simplify navigation and access to tax services. Restructured components and workflows for a more consistent platform experience. Collaborated with development to understand technical constraints and define feasible solutions."
+    }
+  },
+  {
+    "company": "Pontificia Universidad Javeriana",
+    "role": "UX/UI Designer",
+    "date": {
+      "es": "Octubre 2024 - Septiembre 2025 · Contrato · Bogotá, remoto",
+      "en": "October 2024 - September 2025 · Contract · Bogotá, remote"
+    },
+    "summary": {
+      "es": "Rediseño de landing pages de programas de pregrado y posgrado, con estructuras diferenciadas según las necesidades de futuros estudiantes. Talleres y reuniones con stakeholders para identificar problemas, definir mejoras y explorar propuestas. Traducción de sus aportes y de las necesidades de los usuarios en diseños UX/UI para facilitar la exploración y comprensión de los programas académicos.",
+      "en": "Redesigned undergraduate and postgraduate program landing pages, with distinct structures adapted to prospective students’ needs. Collaborated with stakeholders through workshops and review meetings to identify problems, define improvements, and explore ideas. Translated stakeholder input and user needs into UX/UI designs that helped prospective students explore and understand academic programs."
+    },
+    "startDate": "2024-10"
+  },
+  {
+    "company": "Tres Astronautas",
+    "role": "UX Researcher MID",
+    "date": {
+      "es": "Octubre 2024 - Junio 2025 · Contrato · Remoto",
+      "en": "October 2024 - June 2025 · Contract · Remote"
+    },
+    "summary": {
+      "es": "Desarrollo de productos en sprints quincenales: definición, investigación de funcionalidades, flujos e interfaces. Colaboración con stakeholders para alinear requisitos y prioridades. Coordinación del equipo de diseño, entregas y resolución de bloqueos en onboarding, kick-off y handoff. Diseño de Zigi Backoffice con componentes y tokens reutilizables, y de Tip Tap con pagos biométricos y QR. Pruebas de usabilidad, revisión con QA y colaboración con desarrollo para validar soluciones.",
+      "en": "Delivered digital products in two-week sprints, from product definition and feature research to user flows and UI design. Collaborated with stakeholders on requirements and priorities. Coordinated the design team, deliveries, and blockers across onboarding, kick-off, and handoff. Designed Zigi Backoffice using reusable components and design tokens, and Tip Tap with biometric and QR payments. Conducted usability tests, reviewed features with QA, and collaborated with developers to refine and validate solutions."
+    },
+    "startDate": "2024-10"
+  },
+  {
+    "company": "Inlaze",
+    "role": "UX/UI Designer | Head of Marketing",
+    "date": {
+      "es": "Junio 2024 - Octubre 2024",
+      "en": "June 2024 - October 2024"
+    },
+    "startDate": "2024-06"
+  },
+  {
+    "company": "Flexi",
+    "role": "Graphic Designer",
+    "date": {
+      "es": "Enero 2023 - Agosto 2023 · Freelance",
+      "en": "January 2023 - August 2023 · Freelance"
+    },
+    "startDate": "2023-01"
+  },
+  {
+    "company": "BlackSip",
+    "role": "Web Designer Analyst",
+    "date": {
+      "es": "Mayo 2022 - Abril 2024 · Tiempo completo · Colombia, híbrido",
+      "en": "May 2022 - April 2024 · Full-time · Colombia, hybrid"
+    },
+    "startDate": "2022-05",
+    "summary": {
+      "es": "Asesoría a clientes de eCommerce para mejorar la experiencia de compra y la conversión. Análisis de Google Analytics y mapas de calor para identificar abandonos y puntos de fricción en el recorrido de compra. Propuestas de diseño basadas en el comportamiento de los usuarios, los objetivos de negocio y las necesidades del producto. Diseño de landing pages de campañas, rediseño de tiendas online y creación de sistemas de diseño. Identificación de productos más vendidos para orientar estrategias de visibilidad y optimización de conversión.",
+      "en": "Advised eCommerce clients on opportunities to improve the shopping experience and conversion rates. Analyzed Google Analytics data and heatmaps to identify user drop-off points and friction throughout the purchase journey. Proposed design improvements based on user behavior, business goals, and product needs. Designed campaign landing pages, redesigned eCommerce websites, and created design systems. Identified best-selling products to inform product visibility and conversion optimization strategies."
+    },
+    "clients": [
+      "Escape Store",
+      "Levi’s Colombia",
+      "The Bar Colombia",
+      "PA-CO Ecuador",
+      "Envello",
+      "Everlast",
+      "Adidas"
+    ]
+  },
+  {
+    "company": "Buentipo Anchor",
+    "role": "Graphic Designer",
+    "date": {
+      "es": "Mayo 2019 - Abril 2022 · Bogotá, híbrido",
+      "en": "May 2019 - April 2022 · Bogotá, hybrid"
+    },
+    "startDate": "2019-05",
+    "summary": {
+      "es": "Diseño de key visuals y piezas gráficas para campañas publicitarias. Adaptación de materiales a distintos formatos, manteniendo la coherencia con la identidad de cada marca.",
+      "en": "Designed key visuals and graphic assets for advertising campaigns. Adapted campaign visuals across formats while maintaining consistency with each brand’s identity."
+    },
+    "clients": [
+      "Central Cervecera",
+      "Credibanco",
+      "Muebles Tugó",
+      "Cerveza Sol",
+      "Previsora Seguros",
+      "Avantel"
+    ]
+  },
+  {
+    "company": "Peoplepass",
+    "role": "Graphic Designer Analyst",
+    "date": {
+      "es": "Febrero 2017 - Enero 2019 · Colombia, presencial",
+      "en": "February 2017 - January 2019 · Colombia, on-site"
+    },
+    "startDate": "2017-02",
+    "summary": {
+      "es": "Creación de contenido para redes sociales y material POP, manteniendo la identidad de PeoplePass. Coordinación con proveedores y gestión de aprobaciones de piezas gráficas. Colaboración con tecnología para mejorar la experiencia de usuario en las plataformas digitales de la compañía.",
+      "en": "Created social media content and point-of-purchase materials consistent with the PeoplePass brand identity. Coordinated with suppliers and managed graphic material approvals. Collaborated with the technology team to improve the user experience across the company’s digital platforms."
+    }
+  }
+]

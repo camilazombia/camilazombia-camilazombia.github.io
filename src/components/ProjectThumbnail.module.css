@@ -1,0 +1,13 @@
+﻿.capture { display: block; width: 100%; height: 100%; object-fit: contain; background: var(--home-pink-soft); }
+.cover { display: flex; flex-direction: column; justify-content: space-between; gap: 20px; width: 100%; height: 100%; padding: clamp(24px, 4vw, 64px); background: var(--home-pink-soft); color: var(--home-text); text-align: left; }
+.cover > span { font: 400 .65rem/1.5 var(--body-font); letter-spacing: .08em; }
+.cover strong { font: 400 clamp(1.3rem, 3vw, 3rem)/1.05 var(--heading-font); overflow-wrap: anywhere; }
+
+
+.capture[src$='.gif'] { object-fit: cover; background: var(--home-pink-soft); }
+
+
+video.capture { object-fit: cover; object-position: center; }
+
+
+

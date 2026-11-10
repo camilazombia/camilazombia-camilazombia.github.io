@@ -1,0 +1,93 @@
+﻿@font-face {
+  font-family: 'Ginger';
+  src: url('/fonts/Ginger.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Acherus Grotesque';
+  src: url('/fonts/AcherusGrotesque-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Acherus Grotesque';
+  src: url('/fonts/AcherusGrotesque-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --home-cream: #eeebe6;
+  --home-pink: #ff6ca4;
+  --home-pink-soft: #ffdeea;
+  --home-text: #505050;
+  --home-muted: #70686b;
+  --home-border: #e1cbd3;
+  --hero-bg: var(--home-cream);
+  --hero-pink: #f8e7e2;
+  --dark-burgundy: #3d111d;
+  --warm-gold: #b99058;
+  --text-soft: rgba(72, 21, 34, 0.8);
+  --heading-font: 'Ginger', Georgia, serif;
+  --body-font: 'Acherus Grotesque', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--hero-bg);
+  color: var(--dark-burgundy);
+  font-family: var(--body-font);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  background: var(--hero-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+button, input, textarea, select {
+  font-family: var(--body-font);
+}
+
+
+
+.siteLayout { display: flex; flex-direction: column; min-height: 100dvh; }
+.siteLayout > header, .siteLayout > footer { flex-shrink: 0; }
+.siteLayout > main { flex: 1; }
+.projectsViewport { height: 100vh; height: 100dvh; min-height: 0; max-height: 100dvh; overflow: hidden; }
+.projectsViewport > main { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
